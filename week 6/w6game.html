@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 Game stats</title>
+    <link rel="stylesheet" href="Game.css">
+ </head>
+ <body>
+    <header>
+        <h1>Welcome to my Gaming Stat Collector</h1>
+
+    </header>
+    <main>
+        <form id="frmGameDetails">
+            <label for="txtUserName">User Name:  </label>
+            <input type="text" id="txtUserName" name="txtUserName" required>
+                
+            <label for="txtWeapon">Weapon: </label>
+            <input type="text" id="txtWeapon" name="txtWeapon" required>
+            
+            <label for= "txtHealth">Heatlth/Damage </label>
+            <input type="text" id="txtHealth" name="txtHealth">
+
+            <label for="txtPoints">Point Total:</label>
+            <input type="text" id="txtPoints" name="txtPoints">
+
+            <button type="submit" onclick="submitForm();">Submit</button>
+        </form>
+
+        <div id="output">
+            <h2> Player Information</h2>
+            <textarea id="txtAOutput" readonly></textarea>
+        </div>
+
+        <script src="./js/gamestats.js"></script>
+           
+    </main>
+ </body>
+ </html>
